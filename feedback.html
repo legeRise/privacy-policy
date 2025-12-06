@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZClip Data Deletion Request</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #FFF9C4;
+            padding: 20px;
+        }
+
+        .app-name {
+            font-size: 24px;
+            font-weight: 400;
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px 20px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 400;
+            color: #17A2B8;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #17A2B8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #138496;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="app-name">Ezclip</div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">Data Deletion Request</h1>
+
+        <div class="intro">
+            Please fill out the form below to request deletion of your data from EZClip. We will process your request as soon as possible.
+        </div>
+
+        <form action="mailto:legend9266@gmail.com" method="post" enctype="text/plain">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Message (optional):</label>
+            <textarea id="message" name="message" placeholder="Any additional info about your request"></textarea>
+
+            <button type="submit">Submit Request</button>
+            <p class="note">Clicking submit will open your email client to send your request directly.</p>
+        </form>
+    </div>
+</body>
+</html>
